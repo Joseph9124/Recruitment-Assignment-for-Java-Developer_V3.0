@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>invoicing</name>
-	<description>Spring Boot 2 and REST - Example Project</description>
+	<description>Spring Boot Restful Webservice</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

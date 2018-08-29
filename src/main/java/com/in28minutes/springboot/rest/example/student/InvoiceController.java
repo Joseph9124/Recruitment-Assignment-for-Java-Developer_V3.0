@@ -1,22 +1,16 @@
 package com.in28minutes.springboot.rest.example.student;
 
-import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
+
 
 @RestController
 public class InvoiceController {
@@ -45,33 +39,5 @@ public class InvoiceController {
 					return null;
 				}
 	}
-	
-	
-//
-//	@GetMapping("/invoices")
-//	public List<Invoice> retrieveAllStudents() {
-//		return repo.findAll();
-//	}
-//
-//	@GetMapping("/invoices/{id}")
-//	public Invoice retrieveStudent(@PathVariable long id) {
-//		Optional<Invoice> invoice = repo.findById(id);
-//
-//		if(invoice.isPresent()) {
-//			return invoice.get();
-//		}else {
-//			return null;
-//		}
-//	}
-//
-//	@PostMapping("/invoices")
-//	public ResponseEntity<Object> createStudent(@RequestBody Invoice invoice) {
-//		Invoice save = repo.save(invoice);
-//
-//		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
-//				.buildAndExpand(save.getId()).toUri();
-//
-//		return ResponseEntity.created(location).build();
-//
-//	}
+
 }
